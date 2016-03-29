@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Masonry</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<div class="msrItems">
+		<div class="itm1 msrItem"></div>
+		<div class="itm2 msrItem"></div>
+		<div class="itm3 msrItem"></div>
+		<div class="itm4 msrItem"></div>
+		<div class="itm5 msrItem"></div>
+		<div class="itm6 msrItem"></div>
+		<div class="itm7 msrItem"></div>
+	</div>
+	
+	<script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
+	<script src="js/masonry.min.js"></script>
+	<script>
+		var time = undefined;
+		$(function(){
+			//init
+			$('.msrItems').msrItems({
+				'colums': 3, //columns number
+				'margin': 15 //right and bottom margin
+			});
+
+			//update columns size on window resize
+			$( window ).on('resize', function(e) {
+				clearTimeout(time);
+				time = setTimeout(function(){
+					$('.msrItems').msrItems('refresh');
+				}, 200);
+			})
+
+			//load new elements(without updating existing)
+			$('.msrItems').msrItems('doload', [
+				'<div class="itm8 msrItem"></div>',
+				'<div class="itm9 msrItem"></div>',
+				'<div class="itm10 msrItem"></div>'
+			]);
+		});
+	</script>
+</body>
+</html>

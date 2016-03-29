@@ -1,0 +1,6 @@
+{
+  "name": "Masonry",
+  "tagline": "Masonry grid (jQuery plugin)",
+  "body": "# Masonry grid ver 1.0.0\r\n\r\njQuery plugin for creating maronry grid. [Demo](https://jsfiddle.net/Umkka/y8xghswd/)\r\n\r\nFor using just add to the body:\r\n```html\r\n\t<script src=\"http://code.jquery.com/jquery-2.2.2.min.js\"></script>\r\n\t<script src=\"js/masonry.min.js\"></script>\r\n```\r\n\r\nInit example:\r\n```javascript\r\n\t$('.msrItems').msrItems({\r\n\t\t'colums': 3, //columns number\r\n\t\t'margin': 15 //right and bottom margin\r\n\t});\r\n```\r\nAll of this arguments are not required\r\n\r\nFor updating columns size on window resize:\r\n```javascript\r\n\tvar time = undefined;\r\n\t$( window ).on('resize', function(e) {\r\n\t\tclearTimeout(time);\r\n\t\ttime = setTimeout(function(){\r\n\t\t\t$('.msrItems').msrItems('refresh');\r\n\t\t}, 200);\r\n\t})\r\n```\r\n\r\nFor loading new elements without updating existing:\r\n```javascript\r\n\t$('.msrItems').msrItems('doload', [\r\n\t\t'<div class=\"itm8 msrItem\"></div>',\r\n\t\t'<div class=\"itm9 msrItem\"></div>',\r\n\t\t'<div class=\"itm10 msrItem\"></div>'\r\n\t]);\r\n```",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}

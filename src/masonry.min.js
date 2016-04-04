@@ -1,6 +1,6 @@
 /*
-    Name: Masonry
-    Plugin Url: https://umkka.github.io/masonry
+    Name: jQuery grid
+    Plugin Url: https://umkka.github.io/jquery-grid
     Author: Umkka 
     Author Url: http://umkka.net  
     Year: 2016

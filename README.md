@@ -1,4 +1,4 @@
-# Masonry grid ver 1.0.0
+# jQuery grid ver 1.0.0
 
 jQuery plugin for creating maronry grid. [Demo](https://jsfiddle.net/Umkka/y8xghswd/)
 
